@@ -28,4 +28,8 @@ string[] CheckEl(string[] stringArray)
   return result;
 }
 
-
+Console.Write("Введите количество элементов массива: ");
+int x =int.Parse(Console.ReadLine()!);
+string[] stringArray = new string[x];
+array(stringArray);
+Console.WriteLine($"[{string.Join(", ", CheckEl(stringArray))}]");
